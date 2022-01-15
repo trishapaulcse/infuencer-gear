@@ -23,17 +23,34 @@ h1{
 {
     flex-wrap: nowrap;
 }
-.right{
+.right-camera{
     padding-left: 350px;
 }
 .middle-write{
     text-align: center;
 }
-.grid{
+.middle-pic-grid{
     display: flex;
-    flex-wrap: wrap;
+    grid-template-rows: repeat(3, 1fr);
 }
-.size{
-    width: 30%;
+.bonus-pic{
+    width: 100%;
     border-radius: 10px;
+    margin-top: 50px;
+}
+.flex-two{
+    display: flex;
+}
+.bonus-right
+{
+    margin-left: 100px;
+}
+.black-block
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.margin{
+    margin-right: 10px;
 }
