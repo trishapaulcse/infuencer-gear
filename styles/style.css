@@ -23,15 +23,18 @@ h1{
 }
 .color:hover
 {
-    background-color:rgba(240, 128, 1, 0.63);
+    background-color:rgba(122, 4, 4, 0.63);
     transform: scale(1.1);
-    transition: 1s linear ease-in-out;
-    position: absolute;
-
+    transition: 1s ease-in-out;
+}
+h3{
+    font-size: 20px;
+    font-weight: bolder;
 }  
 
-.flex{
-    display: flex;
+.top-portion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .left
 {
@@ -49,8 +52,9 @@ h1{
     border-radius: 10px;
     margin-top: 50px;
 }
-.flex-two{
-    display: flex;
+.bonus{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .bonus-right
 {
@@ -104,17 +108,19 @@ h1{
     font-weight: 700px;
 }
 
-@media only screen and (max-width: 600px) 
-{
-    body {
-      background-color: lightblue;
+  /* mobile screen */
 
+@media only screen and (max-width: 688px) {
+
+    .top-portion .bonus{
+        grid-template-columns: repeat(1fr);
     }
-  }
-  
-  @media only screen and (min-width: 600px) and (max-width:900px)
-  {
-    body {
-      background-color: rgb(247, 248, 248);
-    }
-  }
+    
+
+/* responsive for tablet  */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+    .top-portion .bonus{
+        grid-template-columns: repeat(2, 1fr);
+
+}
